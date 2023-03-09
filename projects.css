@@ -31,7 +31,7 @@ section {
   color: var(--parrot-green);
 }
 .home-section .imgDiv {
-  width: 25%;
+  width: 35%;
   border-radius: 0;
   overflow: visible;
   min-width: 20rem;
@@ -49,6 +49,7 @@ section {
   margin: 0 0 0 0;
   padding: 5rem 0;
   border-radius: 0;
+  justify-content: flex-start;
 }
 .project-section .searchInputWrapper {
   position: absolute;
@@ -90,6 +91,7 @@ section {
 .errorSection {
   flex-direction: row;
   justify-content: space-around;
+  background-color: var(--light-gray);
 }
 .errorSection div {
   width: 50%;

@@ -58,7 +58,7 @@ const submitForm = (e) => {
     };
 
     Toastify({
-      text: "Working..",
+      text: "Sending message..",
       duration: 4500,
       gravity: "top", // `top` or `bottom`
       position: "left", // `left`, `center` or `right`
@@ -92,7 +92,7 @@ const submitForm = (e) => {
           onClick: function () {},
         }).showToast();
 
-        contactElem.classList.remove("open");
+        formDiv.classList.remove("open");
         document.getElementById("myform").reset();
       },
       // Error function

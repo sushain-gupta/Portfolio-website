@@ -127,7 +127,10 @@ const Header = (snapshot) => {
       ? ((logoInitialsElem.innerHTML = logoInitials),
         (logoInitialsElem.style.display = "flex"),
         (logoImgDiv.style.display = "none"))
-      : ((logoImgElem.src = ""), (logoInitialsElem.style.display = "none"));
+      : ((logoImgElem.src =
+          "https://res.cloudinary.com/dkezwrb3a/image/upload/v1678016307/Portfolio/Untitled_design_2_-PhotoRoom.png-PhotoRoom_atrult.png"),
+        (logoInitialsElem.style.display = "none"));
+
     logoElem.forEach((elem) => {
       elem.addEventListener("click", () => (window.location = `${WebUrl}`));
     });
@@ -586,16 +589,19 @@ const Contact = (snapshot) => {
     // defining variables.
     const EmailJs = snapshot.val().EmailJs;
     const contactBtn = document.querySelector(".contactBtn");
-    const formDiv = document.querySelector(".formDiv");
+    formDiv = document.querySelector(".formDiv");
     const closeIcon = formDiv.querySelector(".mobile-nav-icon");
     const contactForm = formDiv.querySelector("form");
 
-    const publicKey = EmailJs.publicKey;
-    const serviceID = EmailJs.serviceID;
-    const templateID = EmailJs.templateID;
+    publicKey = EmailJs.publicKey;
+    serviceID = EmailJs.serviceID;
+    templateID = EmailJs.templateID;
 
     // If publicKey, serviceID & templateID was found in the DB, contact button on click will display the form. Else if any of the one was not found, contact button will have a mailto functionality.
     if (publicKey && serviceID && templateID) {
+      contactBtn.hasAttribute("href") && contactBtn.removeAttribute("href");
+      contactBtn.hasAttribute("target") && contactBtn.removeAttribute("target");
+
       contactBtn.addEventListener("click", () => {
         formDiv.classList.add("open");
       });

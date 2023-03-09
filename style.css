@@ -232,7 +232,7 @@ p {
   font-family: Catamaran, sans-serif;
   font-size: 3rem;
   font-weight: 900;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 .header .logo.img {
   display: flex;
@@ -250,6 +250,7 @@ p {
 .header .navbar {
   display: flex;
   gap: 1.2rem;
+  margin-left: auto;
 }
 .header .navbar .navbar-list {
   display: flex;
@@ -781,8 +782,6 @@ p {
   scale: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   width: 80%;
 }
 .formDiv .mobile-nav-icon {

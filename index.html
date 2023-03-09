@@ -5,15 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description"
-    content="I'm sushain gupta, an india-based freelancer who's into web development and is open to work as a frontend developer. Here, have a look on what I do.">
-  <meta name="keywords"
-    content="Sushain Gupta, sushain, Sushain, Gupta, Sushain gupta, Sushain rajesh gupta, SG, Sgupta, SGupta, Sushain G, SushainG, SushainGupta, SushainRajeshGupta, Sushain's Portfolio, Sushain gupta's portfolio, Sushain portfolio, SG portfolio, SushainG portfolio, Portfolio, Modern Portfolio, portfolio template, no code portfolio, coder, coding, basic portfolio, professional, professional portfolio, how to make a portfolio , easy to make portfolio, free tmplate, template for portfolio, portfolio website, sushain's website, portfolio website by sushain, portfolio website by sushain gupta, developers portfolio, frontend, frontend portfolio, backend portfolio, full stack portfolio, DIY portfolio, firebase, full stack portfolio, fulllstack portfolio, portfolio with backend, simple portfolio, free portfolio code, free portfolio, no cost portfolio, portfolio firebase, dynamic portfolio, Saas portfolio, Saas, developers, pune, pune developer, pune's develoer list, pune's top front end developer, backend developer, portfolio design, modern portfolio designs, simple portfolio design, moderate portfolio design, full stack developer pune, freelacer, freelance, freelancer in pune, india, top freelancers in pune, freelance web developer, web dveloper, frontend web developer, backend web developer, undergraduate developer, undergraduate frontedn developer, undergraduate full stack developer, sppu prep, sppu prep developer, buildiers of sppu prep, good freelancer, portfolio nocode, projects, contact sushain gupta, reachout sushain, reachout sushain gupta, gupta sushain rajesh, india freelancers, sushain-gupta, frontend-projects, fullstack-rpojects, modern projects, free to use projects, free template, modern template, cool looking portfolio, good ui portfolio, best portfolio, clean portfolio design, HTML, CSS, JavaScript, modern look, modern looking design, modern looking template, modern looking portfolio template">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
   <meta name="author" content="Sushain Gupta">
   <meta property="og:image" content="./assets/profile.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sushaingupta.netlify.app">
-  <title>Portfolio | Sushain Gupta</title>
+  <title>Portfolio</title>
   <link rel="canonical" href="https://sushaingupta.netlify.app">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="loader.css">
@@ -43,8 +41,10 @@
     ------------------------->
 
   <header class="header" id="header">
+    <div class="logo img"><img class=""
+        src="https://res.cloudinary.com/dkezwrb3a/image/upload/v1678016307/Portfolio/Untitled_design_2_-PhotoRoom.png-PhotoRoom_atrult.png"
+        alt="logo"></div>
     <p class="logo initials" tabindex="1" href=""></p>
-    <div class="logo img"><img class="" src="" alt="logo"></div>
     <div class="navbar">
       <ul class="navbar-list">
         <li><a class="navbar-link active" name="home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
@@ -58,8 +58,9 @@
             tabindex="8">Education</a></li>
         <li><a class="navbar-link" name="experience" onclick="scrollToSection(this),toggleNav()"
             tabindex="9">Experience</a></li>
-      </ul><a class="contactBtn button" name="getInTouch" tabindex="10">Contact</a><ion-icon tabindex="9"
-        name="close-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+      </ul><a class="contactBtn button" name="getInTouch" tabindex="10" href="https://www.gmail.com"
+        target="_blank">Contact</a><ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon"
+        onclick="toggleNav()"></ion-icon>
     </div><ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
   </header>
 
@@ -74,7 +75,7 @@
         class="about-me-btn button" name="about" onclick="scrollToSection(this)" tabindex="2">About Me<ion-icon
           name="chevron-forward-outline"></ion-icon></button>
     </div>
-    <div class="imgDiv"><img src="./assets/web.png" class="profile-image"></div>
+    <div class="imgDiv"><img src="./assets/project.png" class="profile-image"></div>
   </section>
 
   <!-----------------------
@@ -84,13 +85,16 @@
   <section id="about" class="section about-section" tabindex="11">
     <div class="about-ill"><img src="./assets/about.png" alt="Memoji"></div>
     <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
-      <h2 class="name">(Name)</h2>
+      <h2 class="name">Jhon Doe</h2>
       <div class="professionContainer">
-        <p class="profession">(profession 1)</p>
-        <p class="profession">(profession 2)</p>
+        <p class="profession">profession 1</p>
+        <p class="profession">profession 2</p>
       </div><br>
-      <p class="aboutLong"></p><br><a class="button" href="https://novoresume.com" target="_blank"
-        tabindex="12">Resume<ion-icon name="document-outline"></ion-icon></a>
+      <p class="aboutLong">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat quos assumenda
+        nulla exercitationem est nisi odit quam amet corrupti officiis inventore aut impedit explicabo id distinctio
+        ullam, libero error rem magni consequuntur provident voluptate! Odio numquam blanditiis fugit minus.</p>
+      <br><a class="button" href="https://novoresume.com" target="_blank" tabindex="12">Resume<ion-icon
+          name="document-outline"></ion-icon></a>
     </div>
     <ul class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
       <li><a href="https://www.linkedin.com" aria-label="linkedin" class="linkedin" tabindex="13"><i
@@ -114,7 +118,10 @@
       <h1 class="title">My Skills<p>Tiles in <span>blue</span> are some of my major skills.</p>
       </h1>
       <div class="skill-container">
-        <div class="minor"><img src="./assets/skill.png" alt="Skill image 1">
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 1">
+          <p>Skill name 1</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 1">
           <p>Skill name 1</p>
         </div>
         <div class="minor"><img src="./assets/skill.png" alt="Skill image 2">
@@ -134,10 +141,62 @@
     <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
       data-aos-duration="700" data-aos-once="true">
       <div class="section-header">
-        <h1 class="title">My recent work<p class="sectionDesc"></p>
-        </h1><img class="projMemoji" src="./assets/project-head.png" alt="Memoji">
+        <h1 class="title">My recent work<p class="sectionDesc">
+            Here are a few past projects I've worked on. Want to see more?<a href="https://www.gmail.com" tabindex="22">
+              Email me ></a>
+          </p>
+        </h1><img class="ProjectHeaderImage" src="./assets/project-head.png" alt="Project header image">
       </div>
-      <div class="project card-container"></div>
+      <div class="project card-container">
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Project Title 1</h6>
+          <p class="techstack"><span> Techstack </span> - Techstack 1, Techstack 2</p>
+          <p class="library"><span> Libraries </span> - Library 1, Library 2</p>
+
+          <div class="options">
+            <a class="viewElem" href="https://sushaingupta.netlify.app" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Project Title 2</h6>
+          <p class="techstack"><span> Techstack </span> - Techstack 1, Techstack 2</p>
+          <p class="library"><span> Libraries </span> - Library 1, Library 2</p>
+
+          <div class="options">
+            <a class="viewElem" href="https://sushaingupta.netlify.app" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Project Title 3</h6>
+          <p class="techstack"><span> Techstack </span> - Techstack 1, Techstack 2</p>
+          <p class="library"><span> Libraries </span> - Library 1, Library 2</p>
+
+          <div class="options">
+            <a class="viewElem" href="https://sushaingupta.netlify.app" target="_blank"><ion-icon
+                name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <button class="share"><ion-icon name="link-outline">Copied text!</ion-icon></button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -151,11 +210,44 @@
       <h1 class="title">Education<p>These are some of my past qualifications.</p>
       </h1>
       <div class="card-container">
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">Course name 1</h6>
+          <p class="instituteName">Institute name 1</p>
+
+          <p class="instituteDesc">Institute description</p><br>
+          <p class="status Pursuing">Persuing dd-mm-yyyy</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">Course name 2</h6>
+          <p class="instituteName">Institute name 2</p>
+
+          <p class="instituteDesc">Institute description</p><br>
+          <p class="status Completed">Completed dd-mm-yyyy</p>
+        </div>
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+
+          <h6 class="courseName">Course name 3</h6>
+          <p class="instituteName">Institute name 3</p>
+
+          <p class="instituteDesc">Institute description</p><br>
+          <p class="status Completed">Persuing dd-mm-yyyy</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-----------------------
+  <!-------------------------
         EXPERIENCE SECTION
     ------------------------->
   <section class="section experience-section" id="experience" tabindex="24">
@@ -164,8 +256,17 @@
       <h1 class="title">Experience<p>These are the compaines where I've previously worked.</p>
       </h1>
       <div class="expContainer">
-        <ul class="listOfExp"></ul>
-        <div class="expDesc"></div>
+        <ul class="listOfExp">
+          <li class="companyName active" tabindex="${tabindex}">Company name</li>
+        </ul>
+        <div class="expDesc">
+          <h4 class="expTitle">Job title</h4>
+          <p class="period">From (Month) - to (Month) Year</p><br>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio autem nihil porro consectetur
+            tempore similique laudantium aliquid labore quibusdam quam vel aperiam eligendi, esse illum est pariatur.
+            Dignissimos saepe inventore, nisi consequatur doloribus id obcaecati autem a quo? Corporis voluptatum
+            doloremque quisquam dicta eveniet rerum maiores cum aut, accusantium veniam.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -190,9 +291,16 @@
     <div class="getInTouch">
       <h3>Start a project?</h3>
       <p>Interested in working together? We should queue up a time to chat.</p><a class="getInTouchBtn button"
-        target="_blank" tabindex="36">Get in touch</a>
+        target="_blank" href="https://www.gmail.com" tabindex="36">Get in touch</a>
     </div>
-    <div class="profInfo"></div>
+    <div class="profInfo">
+      <div class="imgDiv">
+        <img src="./assets//project.png" alt="Profile Image">
+      </div>
+
+      <p>Jhon Doe<br>Mail me at <a href="https://www.gmail.com" tabindex="37">Jhondoe@gmail.com</a>
+      </p>
+    </div>
     <div class="reachMeOut">
       <h3>Reach me out on</h3>
       <ul class="social-menu">
