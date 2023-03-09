@@ -189,6 +189,12 @@ p {
   border: 2px solid rgb(149, 149, 149);
 }
 
+@media (hover: hover) {
+  a:hover {
+    cursor: pointer;
+  }
+}
+
 // skeleton-box styling
 
 .skeleton-box {
@@ -252,7 +258,6 @@ p {
     font-family: Catamaran, sans-serif;
     font-size: 3rem;
     font-weight: 900;
-    /* margin-right: auto; */
   }
 
   .logo.img {
@@ -1410,7 +1415,7 @@ p {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .section {
     padding: 12rem 2rem;
   }
@@ -1480,13 +1485,18 @@ p {
       transform: translate(0);
       transition: all 0.95s;
       -webkit-transition: all 0.95s;
-      padding: 1rem;
+      padding: 1.5rem;
       box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-    }
 
-    .header.active .navbar .contactBtn {
-      width: 100%;
-      justify-content: center;
+      .contactBtn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+  .header.active.header-scroll-style {
+    .navbar {
+      top: 0;
     }
   }
 
