@@ -189,6 +189,10 @@ p {
   border: 2px solid rgb(149, 149, 149);
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (hover: hover) {
   a:hover {
     cursor: pointer;
@@ -233,6 +237,100 @@ p {
 @keyframes shimmer {
   100% {
     transform: translateX(100%);
+  }
+}
+
+/* SOCIAL ICONS STYLING */
+.social-menu {
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.8rem;
+    transition: 0.6s;
+    -webkit-transition: all 0.6s;
+
+    border-radius: 0%;
+    aspect-ratio: 1/1;
+
+    i {
+      font-size: 3.2rem;
+      transition: 0.3s;
+      -webkit-transition: all 0.3s;
+
+      color: #222222;
+    }
+  }
+
+  a:hover,
+  a:focus {
+    transform: scale(1.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  a:hover i,
+  a:focus i {
+    color: #fff;
+    cursor: pointer;
+  }
+  .linkedin:hover,
+  .linkedin:focus {
+    background-color: #0077b5;
+  }
+  .github:hover,
+  .github:focus {
+    background-color: #252525;
+  }
+  .instagram:hover,
+  .instagram:focus {
+    background: radial-gradient(
+      circle at 30% 110%,
+      #ffdb8b 0%,
+      #ee653d 25%,
+      #d42e81 50%,
+      #a237b6 75%,
+      #3e5fbc 100%
+    );
+  }
+  .twitter:hover,
+  .twitter:focus {
+    background-color: #1da1f2;
+  }
+  .dribbble:hover,
+  .dribbble:focus {
+    background-color: #db2777;
+  }
+  .flickr:hover,
+  .flickr:focus {
+    background-image: linear-gradient(to right, #1da1f2 50%, #db2777 50%);
+  }
+  .pinterest:hover,
+  .pinterest:focus {
+    background-color: #e60023;
+  }
+  .medium:hover,
+  .medium:focus {
+    background-color: var(--dark-gray);
+  }
+  .facebook:hover,
+  .facebook:focus {
+    background-color: #3b5998;
+  }
+  .behance:hover,
+  .behance:focus {
+    background-color: var(--dark-gray);
   }
 }
 
@@ -312,7 +410,6 @@ p {
 
       .active {
         transform: translateY(-2px);
-        background-color: #f5f5f517;
         text-decoration: underline;
         text-underline-offset: 1.3rem;
       }
@@ -471,100 +568,6 @@ p {
       color: var(--dark-gray);
       background-color: #e2e8f0;
     }
-  }
-}
-
-/* SOCIAL ICONS STYLING */
-.social-menu {
-  display: flex;
-  gap: 4rem;
-  flex-direction: column;
-  border-radius: 1rem;
-  padding: 0;
-
-  li {
-    list-style: none;
-  }
-
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.8rem;
-    transition: 0.6s;
-    -webkit-transition: all 0.6s;
-
-    border-radius: 0%;
-    aspect-ratio: 1/1;
-
-    i {
-      font-size: 3.2rem;
-      transition: 0.3s;
-      -webkit-transition: all 0.3s;
-
-      color: #222222;
-    }
-  }
-
-  a:hover,
-  a:focus {
-    transform: scale(1.1);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  a:hover i,
-  a:focus i {
-    color: #fff;
-    cursor: pointer;
-  }
-  .linkedin:hover,
-  .linkedin:focus {
-    background-color: #0077b5;
-  }
-  .github:hover,
-  .github:focus {
-    background-color: #252525;
-  }
-  .instagram:hover,
-  .instagram:focus {
-    background: radial-gradient(
-      circle at 30% 110%,
-      #ffdb8b 0%,
-      #ee653d 25%,
-      #d42e81 50%,
-      #a237b6 75%,
-      #3e5fbc 100%
-    );
-  }
-  .twitter:hover,
-  .twitter:focus {
-    background-color: #1da1f2;
-  }
-  .dribbble:hover,
-  .dribbble:focus {
-    background-color: #db2777;
-  }
-  .flickr:hover,
-  .flickr:focus {
-    background-image: linear-gradient(to right, #1da1f2 50%, #db2777 50%);
-  }
-  .pinterest:hover,
-  .pinterest:focus {
-    background-color: #e60023;
-  }
-  .medium:hover,
-  .medium:focus {
-    background-color: var(--dark-gray);
-  }
-  .facebook:hover,
-  .facebook:focus {
-    background-color: #3b5998;
-  }
-  .behance:hover,
-  .behance:focus {
-    background-color: var(--dark-gray);
   }
 }
 
@@ -1583,16 +1586,14 @@ p {
     ------------------------------- */
 
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 7px;
 }
-
 ::-webkit-scrollbar-track {
-  box-shadow: rgba(0, 0, 0, 0.3);
-  background: #f1f1f1;
+  background: var(--light-gray);
 }
 ::-webkit-scrollbar-thumb {
   background: #daa520;
+  border-radius: 50% 0 0 50%;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #daa520;
