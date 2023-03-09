@@ -1,0 +1,162 @@
+body {
+  background-image: url("assets/bg-proj.png");
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header .navbar .button {
+  margin: 0;
+}
+.header .navbar .navbar-list {
+  display: none;
+}
+.header .navbar .navbar-list a {
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+
+.home-section {
+  display: none;
+}
+.home-section .sectionDesc h1 {
+  font-size: 3.6rem;
+  line-height: 5rem;
+}
+.home-section .sectionDesc h1 span {
+  color: var(--parrot-green);
+}
+.home-section .sectionDesc p span {
+  color: var(--parrot-green);
+}
+.home-section .imgDiv {
+  width: 25%;
+  border-radius: 0;
+  overflow: visible;
+  min-width: 20rem;
+  margin: auto;
+}
+.home-section .imgDiv img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-section {
+  display: none;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 0 0 0;
+  padding: 5rem 0;
+  border-radius: 0;
+}
+.project-section .searchInputWrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  min-width: 30rem;
+  width: 30%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  border-radius: 2rem;
+}
+.project-section .searchInputWrapper .searchInput {
+  width: 100%;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.project-section .searchInputWrapper .searchInput:focus {
+  outline: none;
+}
+.project-section .searchInputWrapper i {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+  margin: auto 2rem;
+}
+.project-section .card-container {
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.project-section .card-container .card.major {
+  background-image: linear-gradient(to top, #000200, #071806, #0b260a, #07350b, #004508);
+}
+.project-section .card-container .card.filtered-out {
+  scale: 0;
+  transform: translateY(-100%);
+  transition: ease-in-out 0.5s;
+}
+
+.errorSection {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.errorSection div {
+  width: 50%;
+}
+.errorSection .errorImg {
+  width: 80%;
+  margin: auto;
+}
+.errorSection .goBack {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  box-shadow: #252525 0px 20px 30px -10px;
+  background-color: #22c55e;
+  transform: scale(0.9);
+}
+.errorSection .goBack::before {
+  content: "";
+  background-color: rgba(34, 197, 94, 0.2196078431);
+  width: 12rem;
+  height: 12rem;
+  padding: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  animation: grow infinite 2.5s;
+  opacity: 0;
+}
+.errorSection .goBack:hover {
+  position: relative;
+  background-color: var(--parrot-green);
+  transform: scale(1.2);
+}
+@keyframes grow {
+  0% {
+    padding: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    padding: 3rem;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-section .imgDiv {
+    width: 40%;
+    margin: 0;
+  }
+  .errorSection,
+  .project-section {
+    padding: 10rem 0;
+  }
+  .errorSection {
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 5rem;
+  }
+  .errorSection div {
+    width: 70%;
+  }
+  .errorSection .errorImg {
+    width: 100%;
+  }
+}/*# sourceMappingURL=projects.css.map */
