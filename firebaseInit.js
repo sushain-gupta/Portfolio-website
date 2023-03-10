@@ -5,7 +5,7 @@
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
   // The value of `databaseURL` depends on the location of the database
-  databaseURL: "https://sushains-portfolio-default-rtdb.firebaseio.com/",
+  databaseURL: "https://DATABASE_NAME.firebaseio.com",
 };
 
 firebase.initializeApp(firebaseConfig);
