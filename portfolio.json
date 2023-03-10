@@ -19,7 +19,7 @@
     }
   },
   "Education": {
-    "card 1": {
+    "1 - SSC": {
       "Completed": "true/false",
       "CourseName": "SSC/HSC/graduation",
       "CourseDuration": "From (Month) - to (Month) Year",
@@ -27,7 +27,7 @@
       "InstituteName": "Name of school/college/institute",
       "ImageUrl": "Image url"
     },
-    "card 2": {
+    "2 - HSC": {
       "Completed": "true/false",
       "CourseName": "SSC/HSC/graduation",
       "CourseDuration": "From (Month) - to (Month) Year",
@@ -35,7 +35,7 @@
       "InstituteName": "Name of school/college/institute",
       "ImageUrl": "Image url"
     },
-    "card 3": {
+    "3 - graduation": {
       "Completed": "true/false",
       "CourseName": "SSC/HSC/graduation",
       "CourseDuration": "From (Month) - to (Month) Year",
@@ -62,7 +62,17 @@
     "initials": "",
     "url": "http://bit.ly/3XHm7fw"
   },
-  "Projects": {},
+  "Projects": {
+    "1 - Project": {
+      "Github": "",
+      "ImageUrl": "",
+      "Library": "Library 1, Library 2",
+      "ProjectLink": "",
+      "ProjectScale": "Major or minor",
+      "Techstack": "Techstack 1, Techstack 2",
+      "Title": "Project name"
+    }
+  },
   "Skills": [
     "Skill Name 1, major/minor, skill image url 1",
     "Skill Name 2, major/minor, skill image url 2",
