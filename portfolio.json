@@ -1,0 +1,83 @@
+{
+  "(Development Mode)": false,
+  "(WebUrl)": "https://sushaingupta.netlify.app",
+  "About": {
+    "AboutLong": "A **long description** about you.",
+    "AboutShort": "A **short description** about you and your profession.",
+    "EmailId": "",
+    "Gender": "Male/Female/other",
+    "Name": {
+      "FirstName": "",
+      "LastName": ""
+    },
+    "Profession": "example (Web developer, UI/UX designer, etc...)",
+    "ProfileImage": "Image Url",
+    "ResumeUrl": "File Url",
+    "SocialMedia": {
+      "Github": "https://github.com/",
+      "Instagram": "https://www.instagram.com/",
+      "Linkedin": "https://www.linkedin.com/in/",
+      "Twitter": "https://twitter.com/"
+    }
+  },
+  "Education": {
+    "1 - SSC": {
+      "Completed": "true/false",
+      "CourseName": "SSC/HSC/graduation",
+      "CourseDuration": "From (Month) - to (Month) Year",
+      "Description": "Short description",
+      "InstituteName": "Name of school/college/institute",
+      "ImageUrl": "Image url"
+    },
+    "2 - HSC": {
+      "Completed": "true/false",
+      "CourseName": "SSC/HSC/graduation",
+      "CourseDuration": "From (Month) - to (Month) Year",
+      "Description": "Short description",
+      "InstituteName": "Name of school/college/institute",
+      "ImageUrl": "Image url"
+    },
+    "3 - graduation": {
+      "Completed": "true/false",
+      "CourseName": "SSC/HSC/graduation",
+      "CourseDuration": "From (Month) - to (Month) Year",
+      "Description": "Short description",
+      "InstituteName": "Name of school/college/institute",
+      "ImageUrl": "Image url"
+    }
+  },
+  "EmailJs": {
+    "publicKey": "Your publicKey",
+    "serviceID": "Your service ID",
+    "templateID": "Your template ID"
+  },
+  "Experience": {
+    "1 - company name": {
+      "companyName": "Company name",
+      "JobDescription": "**Lorem ipsum dolor, sit amet consectetur** adipisicing elit.//Quos, incidunt. Asperiores quisquam voluptas architecto quis unde eius a nemo, natus ex, perspiciatis harum exercitationem deserunt soluta assumenda necessitatibus neque. Quam!",
+      "period": "From (Month) - to (Month) Year",
+      "title": "Job title"
+    }
+  },
+
+  "Logo": {
+    "initials": "",
+    "url": "http://bit.ly/3XHm7fw"
+  },
+  "Projects": {
+    "1 - Project": {
+      "Github": "",
+      "ImageUrl": "",
+      "Library": "Library 1, Library 2",
+      "ProjectLink": "",
+      "ProjectScale": "Major or minor",
+      "Techstack": "Techstack 1, Techstack 2",
+      "Title": "Project name"
+    }
+  },
+  "Skills": [
+    "Skill Name 1, major/minor, skill image url 1",
+    "Skill Name 2, major/minor, skill image url 2",
+    "Skill Name 3, major/minor, skill image url 3"
+  ]
+}
