@@ -1,4 +1,6 @@
 {
+  "(Development Mode)": false,
+  "(WebUrl)": "https://sushaingupta.netlify.app",
   "About": {
     "AboutLong": "A **long description** about you.",
     "AboutShort": "A **short description** about you and your profession.",
