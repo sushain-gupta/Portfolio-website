@@ -286,7 +286,7 @@ const Project = (snapshot) => {
     const path = window.location.pathname;
 
     // Path can be "/" or "/projects"
-    if (path == "/") {
+    if (path == "/" || path == "/index.html") {
       const projSectionDesc = projectSection.querySelector(".sectionDesc");
 
       projSectionDesc.innerHTML =
@@ -303,6 +303,7 @@ const Project = (snapshot) => {
       var navBar = document.querySelector("header .navbar-list");
     }
 
+    
     // set project container empty (usefull when portfolio is under development mode).
     projContainer.innerHTML = ``;
 
@@ -376,7 +377,7 @@ const Project = (snapshot) => {
           !projectCode &&
           projContainer.querySelector(`.${projectClass} .options`).remove();
 
-        return path == "/" ? (index < 2 ? true : false) : true;
+        return (path == "/" || path == "/index.html") ? (index < 2 ? true : false) : true;
       });
 
       // Set share icon to copy text for each project.
