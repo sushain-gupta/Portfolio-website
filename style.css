@@ -189,6 +189,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--dark-gray);
 }
 
 @media (hover: hover) {
