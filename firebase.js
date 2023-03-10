@@ -206,7 +206,8 @@ const About = (snapshot) => {
     aboutLongElem.innerHTML = aboutLong;
 
     // Set href value of resume button as the value of resumeUrl declared in the User Info (at top)
-    resumeUrl ? (resumeBtn.href = resumeUrl) : resumeBtn.remove();
+    resumeBtn &&
+      (resumeUrl ? (resumeBtn.href = resumeUrl) : resumeBtn.remove());
 
     // Calling SetSocialMenu function to set values of social icons present in about secttion (defined after User Info (at top))
     SetSocialMenu(aboutSection);
@@ -303,7 +304,6 @@ const Project = (snapshot) => {
       var navBar = document.querySelector("header .navbar-list");
     }
 
-    
     // set project container empty (usefull when portfolio is under development mode).
     projContainer.innerHTML = ``;
 
@@ -377,7 +377,11 @@ const Project = (snapshot) => {
           !projectCode &&
           projContainer.querySelector(`.${projectClass} .options`).remove();
 
-        return (path == "/" || path == "/index.html") ? (index < 2 ? true : false) : true;
+        return path == "/" || path == "/index.html"
+          ? index < 2
+            ? true
+            : false
+          : true;
       });
 
       // Set share icon to copy text for each project.
@@ -651,6 +655,10 @@ const Footer = () => {
 //              FIREBASE WRITE FUNCTIONS
 //-------------------------------------------------------
 
+//----------DEVELOPMENT MODE SETUP-------------
+ref.child("(Development Mode)").on("value", (mode) => {
+  DevMode = /true|T|True|t|on|On/.test(mode.val());
+});
 // Whenever a child is added to the Projects, set an object in the child which tends to be empty.
 ref.child("Projects").on("child_added", (snap) => {
   Array(snap).forEach((snapVal) => {
@@ -658,16 +666,53 @@ ref.child("Projects").on("child_added", (snap) => {
       firebase
         .database()
         .ref("Projects/" + snapVal.key)
-        .set({
-          Title: "New Project Title",
-          ImageUrl: "",
-          Library: "",
-          Techstack: "",
-          ProjectLink: "",
-          Github: "",
-          ProjectScale: "",
-        });
+        .set(
+          {
+            Title: "New Project Title",
+            ImageUrl: "",
+            Library: "",
+            Techstack: "",
+            ProjectLink: "",
+            Github: "",
+            ProjectScale: "",
+          } &&
+            DevMode == true &&
+            Toastify({
+              text: `New project has been added to your project section!`,
+              duration: 3000,
+              gravity: "top", // `top` or `bottom`
+              position: "left", // `left`, `center` or `right`
+              stopOnFocus: true,
+              offset: {
+                y: 70, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+              },
+              style: {
+                background: "#16a34a",
+              },
+
+              onClick: function () {},
+            }).showToast()
+        );
   });
+});
+
+ref.child("Projects").on("child_removed", (data) => {
+  DevMode == true &&
+    Toastify({
+      text: `"${data.val().Title}" has been removed from your project section!`,
+      duration: 4500,
+      gravity: "top", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true,
+      offset: {
+        y: 70, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+      },
+      style: {
+        background: "#dc2626",
+      },
+
+      onClick: function () {},
+    }).showToast();
 });
 
 // Whenever a child is added to the Education, set an object in the child which tends to be empty.
@@ -677,15 +722,54 @@ ref.child("Education").on("child_added", (snap) => {
       firebase
         .database()
         .ref("Education/" + snapVal.key)
-        .set({
-          Completed: "true/false",
-          CourseName: "",
-          CourseDuration: "",
-          Description: "",
-          InstituteName: "",
-          ImageUrl: "",
-        });
+        .set(
+          {
+            Completed: "true/false",
+            CourseName: "",
+            CourseDuration: "",
+            Description: "",
+            InstituteName: "",
+            ImageUrl: "",
+          } &&
+            DevMode == true &&
+            Toastify({
+              text: "New course card has been added to your education section!",
+              duration: 3000,
+              gravity: "top", // `top` or `bottom`
+              position: "left", // `left`, `center` or `right`
+              stopOnFocus: true,
+              offset: {
+                y: 70, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+              },
+              style: {
+                background: "#16a34a",
+              },
+
+              onClick: function () {},
+            }).showToast()
+        );
   });
+});
+
+ref.child("Education").on("child_removed", (data) => {
+  DevMode == true &&
+    Toastify({
+      text: `Course details of "${
+        data.val().InstituteName
+      }" has been removed from your education section!`,
+      duration: 4500,
+      gravity: "top", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true,
+      offset: {
+        y: 70, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+      },
+      style: {
+        background: "#dc2626",
+      },
+
+      onClick: function () {},
+    }).showToast();
 });
 
 // Whenever a child is added to the Experience, set an object in the child which tends to be empty.
@@ -695,11 +779,71 @@ ref.child("Experience").on("child_added", (snap) => {
       firebase
         .database()
         .ref("Experience/" + snapVal.key)
-        .set({
-          JobTitle: "",
-          JobDescription: "",
-          WorkingPeriod: "From (Month) - to (Month) Year",
-          CompanyName: "",
-        });
+        .set(
+          {
+            JobTitle: "",
+            JobDescription: "",
+            WorkingPeriod: "From (Month) - to (Month) Year",
+            CompanyName: "",
+          } &&
+            DevMode == true &&
+            Toastify({
+              text: "New job experience has been added to your experience section!",
+              duration: 3000,
+              gravity: "top", // `top` or `bottom`
+              position: "left", // `left`, `center` or `right`
+              stopOnFocus: true,
+              offset: {
+                y: 70, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+              },
+              style: {
+                background: "#16a34a",
+              },
+
+              onClick: function () {},
+            }).showToast()
+        );
   });
+});
+
+ref.child("Experience").on("child_removed", (data) => {
+  DevMode == true &&
+    Toastify({
+      text: `Job details of "${
+        data.val().CompanyName
+      }" has been removed from your experience section!`,
+      duration: 4500,
+      gravity: "top", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true,
+      offset: {
+        y: 70, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+      },
+      style: {
+        background: "#dc2626",
+      },
+
+      onClick: function () {},
+    }).showToast();
+});
+
+ref.child("Skills").on("child_removed", (data) => {
+  DevMode == true &&
+    Toastify({
+      text: `"${
+        data.val().split(",")[0]
+      }" has been removed from your skills section!`,
+      duration: 4500,
+      gravity: "top", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true,
+      offset: {
+        y: 70, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+      },
+      style: {
+        background: "#dc2626",
+      },
+
+      onClick: function () {},
+    }).showToast();
 });

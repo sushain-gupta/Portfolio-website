@@ -61,33 +61,32 @@ console.log(
 //----------DEVELOPMENT MODE SETUP-------------
 ref.child("(Development Mode)").on("value", (mode) => {
   toString(mode.val());
-  DevMode = /true|T|True|t|on|On/.test(mode.val()) ? "on" : "once";
+  DevMode = /true|T|True|t|on|On/.test(mode.val());
+});
 
-  DevMode == "on"
-    ? ref.on("value", (snapshot) => {
-        Header(snapshot);
-        Home(snapshot);
-        About(snapshot);
-        Skills(snapshot);
-        Project(snapshot);
-        Education(snapshot);
-        Experience(snapshot);
-        Contact(snapshot);
-        Footer(snapshot);
-        setSkeleton();
-        navHighlighter();
-      })
-    : ref.once("value", (snapshot) => {
-        Header(snapshot);
-        Home(snapshot);
-        About(snapshot);
-        Skills(snapshot);
-        Project(snapshot);
-        Education(snapshot);
-        Experience(snapshot);
-        Contact(snapshot);
-        Footer(snapshot);
-        setSkeleton();
-        navHighlighter();
-      });
+ref.on("value", (snapshot) => {
+  DevMode == true && Header(snapshot);
+  Home(snapshot);
+  About(snapshot);
+  Skills(snapshot);
+  Project(snapshot);
+  Education(snapshot);
+  Experience(snapshot);
+  Contact(snapshot);
+  Footer(snapshot);
+  setSkeleton();
+  navHighlighter();
+});
+ref.once("value", (snapshot) => {
+  DevMode == false && Header(snapshot);
+  Home(snapshot);
+  About(snapshot);
+  Skills(snapshot);
+  Project(snapshot);
+  Education(snapshot);
+  Experience(snapshot);
+  Contact(snapshot);
+  Footer(snapshot);
+  setSkeleton();
+  navHighlighter();
 });

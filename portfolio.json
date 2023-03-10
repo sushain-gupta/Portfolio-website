@@ -1,18 +1,18 @@
 {
-  "(Development Mode)": false,
+  "(Development Mode)": "true/false",
   "(WebUrl)": "https://sushaingupta.netlify.app",
   "About": {
     "AboutLong": "A **long description** about you.",
-    "AboutShort": "A **short description** about you and your profession.",
-    "EmailId": "",
-    "Gender": "Male/Female/other",
+    "AboutShort": "A **short description** about you.",
+    "EmailId": "Jhondoe@gmail.com",
+    "Gender": "male/female/other",
     "Name": {
-      "FirstName": "",
-      "LastName": ""
+      "FirstName": "Jhon",
+      "LastName": "Doe"
     },
-    "Profession": "example (Web developer, UI/UX designer, etc...)",
-    "ProfileImage": "Image Url",
-    "ResumeUrl": "File Url",
+    "Profession": "Web developer, UI/UX designer",
+    "ProfileImage": "",
+    "ResumeUrl": "",
     "SocialMedia": {
       "Github": "https://github.com/",
       "Instagram": "https://www.instagram.com/",
@@ -23,46 +23,45 @@
   "Education": {
     "1 - SSC": {
       "Completed": "true/false",
-      "CourseName": "SSC/HSC/graduation",
       "CourseDuration": "From (Month) - to (Month) Year",
+      "CourseName": "SSC/HSC/graduation",
       "Description": "Short description",
-      "InstituteName": "Name of school/college/institute",
-      "ImageUrl": "Image url"
+      "ImageUrl": "Image url",
+      "InstituteName": "Name of school/college/institute"
     },
     "2 - HSC": {
       "Completed": "true/false",
-      "CourseName": "SSC/HSC/graduation",
       "CourseDuration": "From (Month) - to (Month) Year",
+      "CourseName": "SSC/HSC/graduation",
       "Description": "Short description",
-      "InstituteName": "Name of school/college/institute",
-      "ImageUrl": "Image url"
+      "ImageUrl": "Image url",
+      "InstituteName": "Name of school/college/institute"
     },
     "3 - graduation": {
       "Completed": "true/false",
-      "CourseName": "SSC/HSC/graduation",
       "CourseDuration": "From (Month) - to (Month) Year",
+      "CourseName": "SSC/HSC/graduation/etc",
       "Description": "Short description",
-      "InstituteName": "Name of school/college/institute",
-      "ImageUrl": "Image url"
+      "ImageUrl": "Image url",
+      "InstituteName": "Name of school/college/institute"
     }
   },
   "EmailJs": {
-    "publicKey": "Your publicKey",
+    "publicKey": "Your public Key",
     "serviceID": "Your service ID",
     "templateID": "Your template ID"
   },
   "Experience": {
     "1 - company name": {
+      "JobDescription": "**Lorem ipsum dolor, sit amet consectetur** adipisicing elit.//Quos, incidunt. Asperiores quisquam voluptas architecto quis unde eius a nemo, natus ex, perspiciatis harum exercitationem deserunt soluta assumenda necessitatibus neque. Quam!",
       "companyName": "Company name",
-      "description": "**Lorem ipsum dolor, sit amet consectetur** adipisicing elit.//Quos, incidunt. Asperiores quisquam voluptas architecto quis unde eius a nemo, natus ex, perspiciatis harum exercitationem deserunt soluta assumenda necessitatibus neque. Quam!",
       "period": "From (Month) - to (Month) Year",
       "title": "Job title"
     }
   },
-
   "Logo": {
     "initials": "",
-    "url": "http://bit.ly/3XHm7fw"
+    "url": ""
   },
   "Projects": {
     "1 - Project": {
@@ -76,8 +75,8 @@
     }
   },
   "Skills": [
-    "Skill Name 1, major/minor, skill image url 1",
-    "Skill Name 2, major/minor, skill image url 2",
-    "Skill Name 3, major/minor, skill image url 3"
+    "Skill Name 1, major, skill image url 1",
+    "Skill Name 2, minor, skill image url 2",
+    "Skill Name 3, minor, skill image url 3"
   ]
 }

@@ -39,22 +39,22 @@ ProjectSearch = () => {
 
 //----------DEVELOPMENT MODE SETUP-------------
 ref.child("(Development Mode)").on("value", (mode) => {
-  DevMode = /true|T|True|t|on|On/.test(mode.val()) ? "on" : "once";
-  DevMode == "on"
-    ? ref.on("value", (snapshot) => {
-        Header(snapshot);
-        Project(snapshot);
-        ProjectSearch();
-        Contact(snapshot);
-        Footer(snapshot);
-        setSkeleton();
-      })
-    : ref.once("value", (snapshot) => {
-        Header(snapshot);
-        Project(snapshot);
-        ProjectSearch();
-        Contact(snapshot);
-        Footer(snapshot);
-        setSkeleton();
-      });
+  DevMode = /true|T|True|t|on|On/.test(mode.val());
+});
+
+ref.on("value", (snapshot) => {
+  DevMode == true && Header(snapshot);
+  Project(snapshot);
+  ProjectSearch();
+  Contact(snapshot);
+  Footer(snapshot);
+  setSkeleton();
+});
+ref.once("value", (snapshot) => {
+  DevMode == false && Header(snapshot);
+  Project(snapshot);
+  ProjectSearch();
+  Contact(snapshot);
+  Footer(snapshot);
+  setSkeleton();
 });
