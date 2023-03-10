@@ -2,9 +2,9 @@
             INTIALIZING FIREBASE
 ---------------------------------------------*/
 
-// TODO: Replace the following with your app's Firebase project configuration
+// TODO: Replace the following with your app's Firebase project configuration.
 const firebaseConfig = {
-  // The value of `databaseURL` depends on the location of the database
+  // The value of `databaseURL` depends on the location of the database.
   databaseURL: "https://DATABASE_NAME.firebaseio.com",
 };
 
