@@ -49,7 +49,7 @@ ref.child("About").on("value", (snapshot) => {
     ? "./assets/male.png"
     : About.Gender == "female"
     ? "./assets/female.png"
-    : "./assets/web.png";
+    : "./assets/project.png";
 
   professions = About.Profession.split(",") ?? "";
   resumeUrl = About.ResumeUrl;
@@ -134,7 +134,7 @@ const Header = (snapshot) => {
     logoElem.forEach((elem) => {
       elem.addEventListener("click", () => (window.location = `${WebUrl}`));
     });
-    if (window.location.pathname == "/") {
+    if (!window.location.pathname == "/projects") {
       snapshot.val().Projects ??
         (navBar.querySelector("a[name=projects]") &&
           navBar.querySelector("a[name=projects]").remove());

@@ -92,6 +92,7 @@ section {
 .card-container .card p {
   font-size: 1.4rem;
   color: var(--text-gray);
+  word-wrap: break-word;
 }
 .card-container .card p span {
   font-weight: 600;
@@ -693,8 +694,6 @@ a {
 .education-section .card-container .card .status {
   color: #161616;
   border-radius: 1rem;
-  width: -moz-max-content;
-  width: max-content;
   margin: auto;
   padding: 0 0.5rem;
   font-weight: 500;
@@ -1002,6 +1001,76 @@ a {
     width: 90vw;
   }
 }
+@media screen and (max-width: 1200px) {
+  /* HEADER AND OTHER BASIC PAGE STYLING */
+  .header .navbar {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    flex-direction: column;
+    position: absolute;
+    height: -moz-max-content;
+    height: max-content;
+    border-radius: 1rem 0 0 1rem;
+    top: 2rem;
+    right: 0;
+    width: 50vmin;
+    transform: translate(100%);
+    transition: all 0.95s;
+    -webkit-transition: all 0.95s;
+  }
+  .header .navbar .navbar-list {
+    margin: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+  .header .navbar .navbar-list .navbar-link {
+    font-weight: 400;
+    padding: 1rem;
+    border-radius: 0;
+  }
+  .header .navbar .navbar-list .navbar-link.active {
+    border-left: 3px solid var(--dark-gray);
+    text-decoration: none;
+  }
+  .header .navbar .mobile-nav-icon {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    border-radius: 0.2rem;
+  }
+  .header .navbar .mobile-nav-icon:hover {
+    color: var(--light-gray);
+    background-color: #dc2626;
+  }
+  .header .navbar .contactBtn {
+    margin: 0 auto;
+  }
+  .header .mobile-nav-icon {
+    display: block;
+  }
+  .header.active {
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+  }
+  .header.active .navbar {
+    transform: translate(0);
+    transition: all 0.95s;
+    -webkit-transition: all 0.95s;
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  }
+  .header.active .navbar .contactBtn {
+    width: 100%;
+    justify-content: center;
+  }
+  .header.active.header-scroll-style .navbar {
+    top: 0;
+  }
+}
 @media screen and (max-width: 1000px) {
   .section {
     flex-direction: column;
@@ -1221,74 +1290,6 @@ a {
 @media (max-width: 900px) {
   .section {
     padding: 12rem 2rem;
-  }
-  /* HEADER AND OTHER BASIC PAGE STYLING */
-  .header .navbar {
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    flex-direction: column;
-    position: absolute;
-    height: -moz-max-content;
-    height: max-content;
-    border-radius: 1rem 0 0 1rem;
-    top: 2rem;
-    right: 0;
-    width: 50vmin;
-    transform: translate(100%);
-    transition: all 0.95s;
-    -webkit-transition: all 0.95s;
-  }
-  .header .navbar .navbar-list {
-    margin: 0;
-    flex-direction: column;
-    padding: 0;
-  }
-  .header .navbar .navbar-list .navbar-link {
-    font-weight: 400;
-    padding: 1rem;
-    border-radius: 0;
-  }
-  .header .navbar .navbar-list .navbar-link.active {
-    border-left: 3px solid var(--dark-gray);
-    text-decoration: none;
-  }
-  .header .navbar .mobile-nav-icon {
-    display: block;
-    position: absolute;
-    right: 2rem;
-    border-radius: 0.2rem;
-  }
-  .header .navbar .mobile-nav-icon:hover {
-    color: var(--light-gray);
-    background-color: #dc2626;
-  }
-  .header .navbar .contactBtn {
-    margin: 0 auto;
-  }
-  .header .mobile-nav-icon {
-    display: block;
-  }
-  .header.active {
-    background-color: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    box-shadow: none;
-  }
-  .header.active .navbar {
-    transform: translate(0);
-    transition: all 0.95s;
-    -webkit-transition: all 0.95s;
-    padding: 1.5rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-  }
-  .header.active .navbar .contactBtn {
-    width: 100%;
-    justify-content: center;
-  }
-  .header.active.header-scroll-style .navbar {
-    top: 0;
   }
   .home-section h1 {
     align-items: center;
