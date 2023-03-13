@@ -1004,6 +1004,7 @@ a {
 .footer {
   position: relative;
   display: flex;
+  flex-direction: column;
   background-color: var(--dark-gray);
   height: max-content;
   min-height: 20rem;
@@ -1011,6 +1012,13 @@ a {
   padding: 3.5rem 5rem 0 5rem;
   justify-content: space-evenly;
   color: #f7f7f7;
+
+  .footerParent {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5rem 0 5rem 0;
+  }
 
   .getInTouch {
     display: flex;
@@ -1047,7 +1055,6 @@ a {
       overflow: hidden;
       border-radius: 50%;
       width: 9rem;
-      height: 100%;
       margin: 1rem;
 
       img {
@@ -1114,6 +1121,22 @@ a {
     h2 {
       text-align: center;
       padding: 0 1rem;
+    }
+  }
+
+  .developerInfo {
+    width: 100%;
+    text-align: center;
+      font-size: 1.2rem;
+    padding: 2rem 0 2rem 0rem;
+    border-top: 1px solid #27272a;
+
+    a {
+      color: var(--light-blue);
+    }
+    a:hover {
+      color: var(--light-blue);
+      text-decoration: underline;
     }
   }
 }
@@ -1457,10 +1480,16 @@ a {
   }
 
   .footer {
-    flex-direction: column;
     height: max-content;
     padding-top: 17rem;
     justify-content: center;
+
+    .footerParent {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+    }
 
     .getInTouch {
       flex-direction: column;
