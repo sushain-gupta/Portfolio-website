@@ -856,6 +856,22 @@ a {
   justify-content: space-evenly;
   color: #f7f7f7;
 
+    .developerInfo {
+    width: 100%;
+    text-align: center;
+      font-size: 1.2rem;
+    padding: 2rem 0 2rem 0rem;
+    border-top: 1px solid #27272a;
+
+    a {
+      color: var(--light-blue);
+    }
+    a:hover {
+      color: var(--light-blue);
+      text-decoration: underline;
+    }
+  }
+
   .getInTouch {
     display: flex;
     justify-content: space-evenly;
@@ -1124,6 +1140,13 @@ a {
     height: max-content;
     padding-top: 17rem;
     justify-content: center;
+
+        .footerParent {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+    }
 
     .getInTouch {
       flex-direction: column;
