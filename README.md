@@ -152,6 +152,11 @@ Step 2.6 - Now copy the database url
 
 <br>
 
+*<p>Tip - You can also set your custom domain.</p>*
+<video src="https://user-images.githubusercontent.com/89994089/224803574-4f6e000e-291e-4a15-9fec-1de20fd548d0.mp4" style="width: 40rem;"></video>
+
+<br>
+
 <h3 id="editing">Editing</h3>
 
 Step 3 - Go back to firebase where we left.
