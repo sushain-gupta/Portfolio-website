@@ -1,3 +1,5 @@
+![GitHub forks](https://img.shields.io/github/forks/sushain-gupta/Portfolio-website?color=%2365a30d)
+![GitHub stars](https://img.shields.io/github/stars/sushain-gupta/Portfolio-website)
 
 # No Code Portfolio
 
@@ -7,9 +9,12 @@ Portfolio build now made easy! Want to make a portfolio but don't how to code? T
 
 Whether you're an artist, writer or something else entirely, a strong portfolio is often a bare minimum requirement. And you can create something top notch without writing a line of code.
 
+<br>
 
 
 **Live [demo](https://superb-dragon-bbbf4e.netlify.app).**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/88a09a54-4c65-4a88-9dbe-ccb88bdb7274/deploy-status)](https://app.netlify.com/sites/guileless-tiramisu-d300b6/)
 
 <br>
 
@@ -165,9 +170,9 @@ Step 3 - Go back to firebase where we left.
 Step 3.1 - Add the deployed url in web url (firebase).
 
 Step 3.2 - Edit all the fields accordingly
-- 3.2.1 Once done editing, change the development mode to off/false and make sure to go to rules tab and change write rules to false after done editing and viceversa.
+- 3.2.1 Once done editing, change the development mode to off/false and make sure to change write rules to false after done editing and viceversa.
 
-<video src="https://user-images.githubusercontent.com/89994089/224953499-345bcf40-39c4-4533-bc19-3365d3b2e2c8.mp4" style="width: 40rem;"></video>
+<video src="https://user-images.githubusercontent.com/89994089/224718822-a884e840-f733-4b23-94ed-4c17441b6237.mp4" style="width: 40rem;"></video>
 
 <br>
 <br>
