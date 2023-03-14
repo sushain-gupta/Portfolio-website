@@ -167,7 +167,7 @@ Step 3.1 - Add the deployed url in web url (firebase).
 Step 3.2 - Edit all the fields accordingly
 - 3.2.1 Once done editing, change the development mode to off/false and make sure to go to rules tab and change write rules to false after done editing and viceversa.
 
-<video src="https://user-images.githubusercontent.com/89994089/224718822-a884e840-f733-4b23-94ed-4c17441b6237.mp4" style="width: 40rem;"></video>
+<video src="https://user-images.githubusercontent.com/89994089/224953499-345bcf40-39c4-4533-bc19-3365d3b2e2c8.mp4" style="width: 40rem;"></video>
 
 <br>
 <br>
