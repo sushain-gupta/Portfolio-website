@@ -38,7 +38,7 @@ Whether you're an artist, writer, or something else entirely, a strong portfolio
 
 ## Libraries
 
-Animate on scroll (AOS), Toastify JS.
+Email JS, Animate on scroll (AOS), Toastify JS.
 
 <br>
 
@@ -55,7 +55,7 @@ Animate on scroll (AOS), Toastify JS.
 2. <a href="#advancedGuide">Advanced Guide</a>
     - <a href="#note">Note</a>
 
-3. <a href="#features">Additional Firebase Features</a>
+3. <a href="#features">Additional Features</a>
 
 <br>
 
@@ -192,11 +192,12 @@ Step 4 - Deploy the folder on your preferred hosting platform.
 
 <h3 id="note">Note</h3>
 
-*There are multiple ways to run and deploy the project, but I personally felt the above steps were a bit easier to understand.*
+- *There are multiple ways to run and deploy the project, but I personally felt the above steps were a bit easier to understand.*
+- *For storing your images you can use [Cloudinary](https://cloudinary.com) or [Firebase storage](https://firebase.google.com/docs/storage/web/start).*
 
 <br>
 
-<h2 id="features">Additional Firebase Features</h2>
+<h2 id="features">Additional Features</h2>
 
 - Wrap the text with "**" to make the input text bold.
 
@@ -221,10 +222,14 @@ Step 4 - Deploy the folder on your preferred hosting platform.
 - You can also add Firebase Analytics to check your portfolio's performance. [View Docs](https://support.google.com/firebase/answer/9519624?hl=en)
 
 <br>
+
+- For mailing services, you have to get your key and other credentionals by signing onto [EmailJS](https://www.emailjs.com). For setup guide refer [Docs](https://www.emailjs.com/docs/).
+
+    - Once done, make sure to copy [this](https://res.cloudinary.com/dkezwrb3a/raw/upload/v1678882667/Portfolio/email-temp.txt) and paste it in your EmailJS template.
+
+<br>
 <br>
 
 ## License
 
 [MIT](https://github.com/sushain-gupta/Portfolio-website/blob/main/LICENSE)
-
-
