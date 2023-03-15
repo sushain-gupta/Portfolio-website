@@ -12,7 +12,7 @@ Whether you're an artist, writer, or something else entirely, a strong portfolio
 <br>
 
 
-**Live [demo](https://superb-dragon-bbbf4e.netlify.app).**
+**Live [demo](https://sushaingupta.netlify.app).**
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88a09a54-4c65-4a88-9dbe-ccb88bdb7274/deploy-status)](https://app.netlify.com/sites/guileless-tiramisu-d300b6/)
 
@@ -61,7 +61,7 @@ Email JS, Animate on scroll (AOS), Toastify JS.
 
 <h2 id="gettingStarted">Getting Started</h2>
 
-*If you already have a github account you can directly jump to the <a href="beginnersGuide">Beginners guide</a>*
+*If you already have a github account you can directly jump to the <a href="#beginnersGuide">Beginners guide</a>*
 
 <br>
 
@@ -69,7 +69,7 @@ Sign up and create your GitHub account.
 
 <img src="https://user-images.githubusercontent.com/89994089/224506275-3f32fe67-bb5c-4491-bd9b-be8b0dd3b614.png" alt="Portfolio Demo Image" style="width: 25rem;">
 
-Once signed in, proceed to the <a href="beginnersGuide">Beginners guide </a>.
+Once signed in, proceed to the <a href="#beginnersGuide">Beginners guide </a>.
 
 <br>
 
