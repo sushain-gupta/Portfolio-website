@@ -69,7 +69,7 @@ Sign up and create your GitHub account.
 
 <img src="https://user-images.githubusercontent.com/89994089/224506275-3f32fe67-bb5c-4491-bd9b-be8b0dd3b614.png" alt="Portfolio Demo Image" style="width: 25rem;">
 
-Once signed in, proceed to the <a href="beginnersGuide">Beginners guide/a>.
+Once signed in, proceed to the <a href="beginnersGuide">Beginners guide </a>.
 
 <br>
 
