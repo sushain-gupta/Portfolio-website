@@ -1,5 +1,5 @@
-![GitHub forks](https://img.shields.io/github/forks/sushain-gupta/Portfolio-website?color=%2365a30d)
-![GitHub stars](https://img.shields.io/github/stars/sushain-gupta/Portfolio-website)
+![GitHub forks](https://img.shields.io/github/forks/sushain-gupta/Portfolio-website?style=flat-square)
+![GitHub stars](https://img.shields.io/github/stars/sushain-gupta/Portfolio-website?color=%23dc2626)
 
 # No Code Portfolio
 
