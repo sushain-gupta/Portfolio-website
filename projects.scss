@@ -864,10 +864,10 @@ a {
     margin: 5rem 0 5rem 0;
   }
 
-    .developerInfo {
+  .developerInfo {
     width: 100%;
     text-align: center;
-      font-size: 1.2rem;
+    font-size: 1.2rem;
     padding: 2rem 0 2rem 0rem;
     border-top: 1px solid #27272a;
 
@@ -915,11 +915,14 @@ a {
       overflow: hidden;
       border-radius: 50%;
       width: 9rem;
+      min-width: 9rem;
+      height: 9rem;
       margin: 1rem;
 
       img {
-        width: 100%;
-        height: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -1148,7 +1151,7 @@ a {
     padding-top: 17rem;
     justify-content: center;
 
-        .footerParent {
+    .footerParent {
       justify-content: center;
       align-items: center;
       flex-direction: column;
