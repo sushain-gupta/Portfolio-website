@@ -12,7 +12,7 @@ Whether you're an artist, writer, or something else entirely, a strong portfolio
 <br>
 
 
-**Live [demo](https://portfolio-demoo.netlify.app/).**
+**Live [demo](https://dummy-portfolioo.netlify.app/).**
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/88a09a54-4c65-4a88-9dbe-ccb88bdb7274/deploy-status)](https://app.netlify.com/sites/guileless-tiramisu-d300b6/)
 
