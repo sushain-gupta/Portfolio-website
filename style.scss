@@ -458,7 +458,6 @@ a {
   padding-right: 12rem;
   background-color: rgba(255, 255, 255, 0.96);
 
-
   div {
     width: 50%;
     margin-top: 3rem;
@@ -518,10 +517,10 @@ a {
     overflow: hidden;
 
     .profile-image {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -1059,11 +1058,14 @@ a {
       overflow: hidden;
       border-radius: 50%;
       width: 9rem;
+      min-width: 9rem;
+      height: 9rem;
       margin: 1rem;
 
       img {
-        width: 100%;
-        height: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -1131,7 +1133,7 @@ a {
   .developerInfo {
     width: 100%;
     text-align: center;
-      font-size: 1.2rem;
+    font-size: 1.2rem;
     padding: 2rem 0 2rem 0rem;
     border-top: 1px solid #27272a;
 
@@ -1159,10 +1161,10 @@ a {
 
 @media screen and (max-width: 1300px) {
   .home-section {
-     .imgDiv {
-    min-width: 30rem;
-    width: 30rem;
-    height: 30rem;
+    .imgDiv {
+      min-width: 30rem;
+      width: 30rem;
+      height: 30rem;
     }
   }
   .formDiv {
@@ -1562,7 +1564,7 @@ a {
       min-width: 25rem;
       width: 25rem;
       height: 25rem;
-      }
+    }
   }
 
   .about-section {
@@ -1599,7 +1601,10 @@ a {
 
   .footer {
     .profInfo {
+      display: flex;
+
       p {
+        width: max-content;
         font-size: 1.4rem;
       }
     }
@@ -1613,6 +1618,12 @@ a {
       flex-direction: column;
       gap: 0;
       line-height: 5rem;
+    }
+  }
+
+  .footer {
+    .imgDiv {
+      margin: auto;
     }
   }
 
