@@ -162,7 +162,7 @@ const Home = () => {
 
   // Set's home section as per the data fetched from the DB.
   homeSection.innerHTML = `
-      <div>
+    <div>
       <h1>Hey, I'm <span class="name">${firstName}</span>
       </h1>
       <p class="aboutShort">${aboutShort}</p>

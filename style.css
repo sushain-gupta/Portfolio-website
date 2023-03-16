@@ -451,15 +451,19 @@ a {
 }
 .home-section .imgDiv {
   display: flex;
+  min-width: 40rem;
   width: 40rem;
-  height: 100%;
-  border-radius: 50%;
+  height: 40rem;
   margin-top: 3rem;
+  border-radius: 50%;
   overflow: hidden;
 }
 .home-section .imgDiv .profile-image {
+  max-width: 100%;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*  -------------------------------
@@ -1002,6 +1006,11 @@ a {
   }
 }
 @media screen and (max-width: 1300px) {
+  .home-section .imgDiv {
+    min-width: 30rem;
+    width: 30rem;
+    height: 30rem;
+  }
   .formDiv {
     gap: 2rem;
     width: 100%;
@@ -1325,6 +1334,11 @@ a {
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+  .home-section .imgDiv {
+    min-width: 25rem;
+    width: 25rem;
+    height: 25rem;
   }
   .about-section .about-ill {
     width: 70%;
