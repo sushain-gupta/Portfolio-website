@@ -1133,8 +1133,11 @@ a {
   }
 
   .formDiv {
-    width: 95%;
     padding: 0;
+
+    img {
+      display: none;
+    }
 
     form {
       padding: 2rem;
