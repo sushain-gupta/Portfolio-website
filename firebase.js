@@ -74,6 +74,7 @@ const SetSocialMenu = (section) => {
   const githubBtn = socialMenuElem.querySelector(".github");
   const instagramBtn = socialMenuElem.querySelector(".instagram");
   const twitterBtn = socialMenuElem.querySelector(".twitter");
+  const socialList = socialMenuElem.querySelectorAll('li')
 
   // Social media icons are added and sets href value as per the values added in DB.
   Object.entries(socialMenu).forEach((social) => {
@@ -94,10 +95,13 @@ const SetSocialMenu = (section) => {
   });
 
   // There are 4 default social icons set in html. If value of the social is not found in DB, remove element from html.
-  linkedin ? (linkedinBtn.href = linkedin) : linkedinBtn.remove();
-  github ? (githubBtn.href = github) : githubBtn.remove();
-  instagram ? (instagramBtn.href = instagram) : instagramBtn.remove();
-  twitter ? (twitter.href = twitter) : twitterBtn.remove();
+linkedin ? (linkedinBtn.href = linkedin) : socialMenuElem.querySelector('#linkedin') && socialMenuElem.querySelector('#linkedin').remove();
+
+  github ? (githubBtn.href = github) : socialMenuElem.querySelector('#github') &&  socialMenuElem.querySelector('#github').remove();
+  
+  instagram ? (instagramBtn.href = instagram) : socialMenuElem.querySelector('#instagram') && socialMenuElem.querySelector('#instagram').remove();
+
+  twitter ? (twitterBtn.href = twitter) : socialMenuElem.querySelector('#twitter') && socialMenuElem.querySelector('#twitter').remove();
 };
 
 /*-------------------------------------------
