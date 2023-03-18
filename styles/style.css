@@ -179,7 +179,6 @@ p {
 .button:focus {
   background-color: #22c55e;
   color: white;
-  cursor: pointer;
 }
 
 .button:focus {
@@ -195,7 +194,6 @@ a {
 
 @media (hover: hover) {
   a:hover {
-    cursor: pointer;
   }
 }
 .skeleton-box {
@@ -214,7 +212,13 @@ a {
   bottom: 0;
   left: 0;
   transform: translateX(-100%);
-  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
   animation: shimmer 2s infinite;
   content: "";
 }
@@ -255,12 +259,10 @@ a {
 .social-menu a:focus {
   transform: scale(1.1);
   border-radius: 50%;
-  cursor: pointer;
 }
 .social-menu a:hover i,
 .social-menu a:focus i {
   color: #fff;
-  cursor: pointer;
 }
 .social-menu .linkedin:hover,
 .social-menu .linkedin:focus {
@@ -272,7 +274,14 @@ a {
 }
 .social-menu .instagram:hover,
 .social-menu .instagram:focus {
-  background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%);
+  background: radial-gradient(
+    circle at 30% 110%,
+    #ffdb8b 0%,
+    #ee653d 25%,
+    #d42e81 50%,
+    #a237b6 75%,
+    #3e5fbc 100%
+  );
 }
 .social-menu .twitter:hover,
 .social-menu .twitter:focus {
@@ -362,12 +371,10 @@ a {
   text-underline-offset: 0.7rem;
   transform: scale(1.1);
   cursor: var(--hand-pointer);
-  cursor: pointer;
 }
 .header .navbar .navbar-list .navbar-link.active:hover {
   text-decoration: none;
   cursor: var(--arrow-pointer);
-  cursor: pointer;
 }
 .header .navbar .navbar-list .active {
   transform: translateY(-2px);
@@ -447,7 +454,7 @@ a {
 .home-section div .about-me-btn:focus {
   gap: 1rem;
   color: var(--light-blue);
-  cursor: pointer;
+
   border: none;
 }
 .home-section .imgDiv {
@@ -464,7 +471,7 @@ a {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*  -------------------------------
@@ -476,7 +483,14 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   background-color: transparent;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgb(255, 255, 255), rgb(255, 255, 255), #f9f9f9, #f7f7f7);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.95),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    #f9f9f9,
+    #f7f7f7
+  );
 }
 .about-section .about-ill {
   width: 30%;
@@ -591,7 +605,14 @@ a {
 }
 .project-section .card-container .card {
   height: 35rem;
-  background-image: linear-gradient(to top, #000, #121112, #1c1c1f, #25282b, #2d3436);
+  background-image: linear-gradient(
+    to top,
+    #000,
+    #121112,
+    #1c1c1f,
+    #25282b,
+    #2d3436
+  );
   background-repeat: no-repeat;
   background-size: 100% 50%;
 }
@@ -660,7 +681,6 @@ a {
 .project-section .card-container .card:focus ion-icon:focus {
   color: var(--light-gray);
   background-color: var(--light-blue);
-  cursor: pointer;
 }
 @media (hover: hover) {
   .project-section .card:hover .options::before {
@@ -676,7 +696,6 @@ a {
   .project-section .card:hover ion-icon:hover {
     color: var(--light-gray);
     background-color: var(--light-blue);
-    cursor: pointer;
   }
 }
 
@@ -834,7 +853,7 @@ a {
   background: transparent;
   -webkit-user-select: text;
   -moz-user-select: text;
-       user-select: text;
+  user-select: text;
   border-radius: 0;
 }
 .formDiv form div input:-webkit-autofill,
@@ -934,7 +953,7 @@ a {
   min-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .footer .profInfo p {
   font-size: 1.2rem;
@@ -942,7 +961,6 @@ a {
 .footer .profInfo p a {
   color: var(--light-blue);
   text-decoration: none;
-  cursor: pointer;
 }
 .footer .profInfo p a:hover {
   text-decoration: underline;
@@ -1415,4 +1433,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #daa520;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
