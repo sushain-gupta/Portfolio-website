@@ -47,9 +47,9 @@
     }
   },
   "EmailJs": {
-    "publicKey": "Your public Key",
-    "serviceID": "Your service ID",
-    "templateID": "Your template ID"
+    "publicKey": "",
+    "serviceID": "",
+    "templateID": ""
   },
   "Experience": {
     "1 - company name": {
@@ -69,7 +69,7 @@
       "ImageUrl": "",
       "Library": "Library 1, Library 2",
       "ProjectLink": "",
-      "ProjectScale": "Major or minor",
+      "ProjectScale": "Major",
       "Techstack": "Techstack 1, Techstack 2",
       "Title": "Project name"
     }
