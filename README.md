@@ -12,7 +12,7 @@ Whether you're an artist, writer, or something else entirely, a strong portfolio
 <br>
 
 
-**Live [demo](https://dummy-portfolioo.netlify.app/).**
+<a href="https://dummy-portfolioo.netlify.app/" target="_blank">Live demo</a>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1815e05c-5fe8-44df-a9b4-7bd920019214/deploy-status)](https://app.netlify.com/sites/dummy-portfolioo/deploys)
 
